@@ -1,0 +1,24 @@
+.drawer-container{
+    flex-grow: 1;
+    transition: width 0.3s ease-in-out;
+    /* transition-delay: 300ms; */
+ 
+}
+.icons{
+    min-width: 24px;
+}
+
+
+
+  .drawer-container {
+   
+     /* Add transition effect */
+  }
+  .drawer-container.open {
+    width: 250px;
+  }
+
+  .drawerss{
+    overflow: hidden;
+    position: relative;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box,Button, ButtonOwnProps, ButtonProps, Stack, StackProps, SxProps, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import image23 from '../public/images/gjhgjh.jpg'
+import Image from 'next/image';
 interface Containerprops extends StackProps {
    
     onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void; 
@@ -59,7 +60,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         </Box>
         <Box sx={{ display: 'flex', ml: '78.5px', mt: '-38px', mb: '12px' }}>
           <img alt=''  style={{ ...imageStyle }} src={filess ? URL.createObjectURL(filess) : "/images/gjhgjh.jpg"}  />
-        </Box>
+          <img alt=''  style={{ ...imageStyle }} src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"/>
+          <Image alt='' width={50} height={50} src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"/>
+          </Box>
       </Stack>
       <Stack flexDirection={'column'} { ...contentStyle }>
         <Typography fontSize={'12px'}>{userDetails?.name}</Typography>
