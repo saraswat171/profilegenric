@@ -1,5 +1,4 @@
-import Layout from "@/Layout/Layout";
-import './drawerss.css'
+import MiniDrawer from "@/component/NewNavbar/NewNavbar";
 
 
 
@@ -11,13 +10,12 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body >  
-          <div className="drawerss" >
-         <Layout/>
-
-          </div>
+         
+      <MiniDrawer>
           {children}
-          <div>    
-          </div>
+          
+      </MiniDrawer>
+     
         </body>
       </html>
     );

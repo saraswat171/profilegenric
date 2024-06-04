@@ -31,7 +31,7 @@ export default function TemporaryDrawer( {open, onMenuClick}:TemporaryDrawerProp
               <ListItemIcon className='icons'>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-             {open &&  <ListItemText primary={text} className='transithh' primaryTypographyProps={{
+             {open &&  <ListItemText primary={text} className='transithh'   primaryTypographyProps={{
               noWrap: true
              }}/>}
             </ListItemButton>
@@ -42,7 +42,8 @@ export default function TemporaryDrawer( {open, onMenuClick}:TemporaryDrawerProp
   );
 
   return (
-      <Drawer anchor='left' open={open} onClose={toggleDrawer}  variant='permanent' className="drawer-container " PaperProps={{className:'drawerss'}} sx={{width: open ? '250px' : '72px' , zIndex:'0'} } >
+      <Drawer anchor='left' open={open} onClose={toggleDrawer}  variant='permanent' className="drawer-container " PaperProps={{className:'drawerss'}}
+       sx={{width: open ? '250px' : '72px' , zIndex:'0'} } >
         {DrawerList}
       </Drawer>
   );
