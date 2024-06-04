@@ -6,7 +6,7 @@ export default function Home() {
     <main >
       <div >
        
-       chetan
+       chetan sraswat
       </div>
     </main>
   );
