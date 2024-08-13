@@ -17,13 +17,7 @@ interface MenuAppBarProps {
    
   }
 export default function MenuAppBar({onMenuClick}:MenuAppBarProps) {
-  const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-
-//   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     setAuth(event.target.checked);
-//   };
   const handleLogout = () => {
    alert('logout')
   };
